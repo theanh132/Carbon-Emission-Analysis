@@ -1,6 +1,6 @@
 # Carbon Emission Analysis
 
-![image](https://github.com/theanh132/Carbon-Emission-Analysis/commit/4d7837dfa91128a4f0982eed2e857dd4c07d4cf6)
+![image](https://github.com/theanh132/Carbon-Emission-Analysis/blob/main/cover.jpg)
 
 This report aims to analyze carbon emissions to examine the carbon footprint across various industries. We aim to identify sectors with the highest levels of emissions by analyzing them across countries and years, as well as to uncover trends.
 
@@ -121,7 +121,7 @@ Some typical products such as wind turbines have a capacity of more than 3,000,0
 | Mercedes-Benz GLE (GLE 500 4MATIC)                                                                                                 | Automobiles & Components           | 
 | Electric Motor                                                                                                                     | Capital Goods                      | 
 
-
+Looking at the table, we can see some manufacturing industries that affect the environment such as Electrical Equipment and Machinery, Automobiles & Components, Materials
 
 
 
