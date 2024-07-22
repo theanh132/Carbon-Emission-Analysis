@@ -123,5 +123,49 @@ Some typical products such as wind turbines have a capacity of more than 3,000,0
 
 Looking at the table, we can see some manufacturing industries that affect the environment such as Electrical Equipment and Machinery, Automobiles & Components, Materials
 
+**What are the industries with the highest contribution to carbon emissions?**
+
+> SELECT i.industry_group,SUM(carbon_footprint_pcf) AS total_pcf
+> FROM product_emissions AS p
+> JOIN industry_groups AS i
+> ON p.industry_group_id = i.id
+> GROUP BY i.industry_group
+> ORDER BY SUM(carbon_footprint_pcf) DESC
+
+| industry_group                                                         | total_pcf | 
+| ---------------------------------------------------------------------: | --------: | 
+| Electrical Equipment and Machinery                                     | 9801558   | 
+| Automobiles & Components                                               | 2582264   | 
+| Materials                                                              | 577595    | 
+| Technology Hardware & Equipment                                        | 363776    | 
+| Capital Goods                                                          | 258712    | 
+| "Food, Beverage & Tobacco"                                             | 111131    | 
+| "Pharmaceuticals, Biotechnology & Life Sciences"                       | 72486     | 
+| Chemicals                                                              | 62369     | 
+| Software & Services                                                    | 46544     | 
+| Media                                                                  | 23017     | 
+| Energy                                                                 | 10774     | 
+| "Forest and Paper Products - Forestry, Timber, Pulp and Paper, Rubber" | 8909      | 
+| "Mining - Iron, Aluminum, Other Metals"                                | 8181      | 
+| Consumer Durables & Apparel                                            | 7309      | 
+| Commercial & Professional Services                                     | 5265      | 
+| Containers & Packaging                                                 | 2988      | 
+| Tires                                                                  | 2022      | 
+| Food & Staples Retailing                                               | 1481      | 
+| "Consumer Durables, Household and Personal Products"                   | 931       | 
+| Telecommunication Services                                             | 418       | 
+| "Textiles, Apparel, Footwear and Luxury Goods"                         | 387       | 
+| Utilities                                                              | 244       | 
+| Trading Companies & Distributors and Commercial Services & Supplies    | 239       | 
+| Food & Beverage Processing                                             | 141       | 
+| Gas Utilities                                                          | 122       | 
+| Semiconductors & Semiconductor Equipment                               | 54        | 
+| Retailing                                                              | 30        | 
+| Semiconductors & Semiconductors Equipment                              | 3         | 
+| Tobacco                                                                | 1         | 
+| Household & Personal Products                                          | 0         | 
+
+Most of the pcf index focuses on industries such as Electrical Equipment and Machinery, Automobiles & Components, Materials with the highest pcf level of over 300,000, the highest pcf is Electrical Equipment and Machinery with over 9000,000 pcf and some other industries such as Energy, Personal Products pcf amount is insignificant at less than 11,000
+
 
 
