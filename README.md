@@ -165,6 +165,7 @@ Looking at the table, we can see some manufacturing industries that affect the e
 | Tobacco                                                                | 1         | 
 | Household & Personal Products                                          | 0         | 
 
+![image](https://github.com/theanh132/Carbon-Emission-Analysis/blob/main/A%CC%89nh%20chu%CC%A3p%20ma%CC%80n%20hi%CC%80nh%202024-07-22%20115044.png)
 Most of the pcf index focuses on industries such as Electrical Equipment and Machinery, Automobiles & Components, Materials with the highest pcf level of over 300,000, the highest pcf is Electrical Equipment and Machinery with over 9000,000 pcf and some other industries such as Energy, Personal Products pcf amount is insignificant at less than 11,000
 
 
