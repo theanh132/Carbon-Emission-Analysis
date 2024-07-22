@@ -176,154 +176,31 @@ Most of the pcf index focuses on industries such as Electrical Equipment and Mac
 > ON p.company_id = c.id
 > GROUP BY c.company_name
 > ORDER BY SUM(carbon_footprint_pcf) DESC
+> LIMIT 20
 
-| company_name                                   | total_pcf | 
-| ---------------------------------------------: | --------: | 
-| "Gamesa Corporación Tecnológica, S.A."         | 9778464   | 
-| Daimler AG                                     | 1594300   | 
-| Volkswagen AG                                  | 655960    | 
-| "Mitsubishi Gas Chemical Company, Inc."        | 212016    | 
-| "Hino Motors, Ltd."                            | 191687    | 
-| Arcelor Mittal                                 | 167007    | 
-| Weg S/A                                        | 160655    | 
-| General Motors Company                         | 137007    | 
-| "Lexmark International, Inc."                  | 132012    | 
-| "Daikin Industries, Ltd."                      | 105600    | 
-| CJ Cheiljedang                                 | 94817     | 
-| LG Chem Ltd                                    | 91926     | 
-| Waters Corporation                             | 72486     | 
-| Xerox Corporation                              | 72051     | 
-| Akzo Nobel                                     | 70417     | 
-| Quanta Computer                                | 58217     | 
-| "Ricoh Co., Ltd."                              | 35505     | 
-| NEC Corporation                                | 23858     | 
-| Bloomberg                                      | 22684     | 
-| Metsä Board                                    | 21533     | 
-| "Fuji Xerox Co., Ltd."                         | 21364     | 
-| Hewlett-Packard                                | 20123     | 
-| "Kuraray Co., Ltd."                            | 20000     | 
-| Alcoa Corp.                                    | 19551     | 
-| Dell Inc.                                      | 18209     | 
-| Tata Steel                                     | 15766     | 
-| "Konica Minolta, Inc."                         | 11160     | 
-| "Hitachi, Ltd."                                | 9328      | 
-| Tata Chemicals                                 | 8808      | 
-| Sappi                                          | 8142      | 
-| Sanden                                         | 7811      | 
-| "Compañía Española de Petróleos, S.A.U. CEPSA" | 6999      | 
-| Smurfit Kappa Group PLC                        | 5130      | 
-| Tennant Company                                | 5124      | 
-| "Casio Computer Co., Ltd."                     | 4688      | 
-| Braskem S/A                                    | 4432      | 
-| "Yokohama Rubber Company, Limited"             | 4160      | 
-| Associated British Foods                       | 3900      | 
-| Steelcase                                      | 3770      | 
-| MAGOTTEAUX                                     | 3500      | 
-| MUNTONS PLC                                    | 3470      | 
-| NCP ALCOHOLS                                   | 3299      | 
-| Ajinomoto Co.Inc.                              | 3292      | 
-| "CNX Coal Resources, LP"                       | 3025      | 
-| Stonyfield Farm Inc                            | 2721      | 
-| Qisda                                          | 2562      | 
-| Cabot Corporation                              | 2280      | 
-| Lafarge S.A.                                   | 2204      | 
-| "Cisco Systems, Inc."                          | 1751      | 
-| Empresas CMPC                                  | 1555      | 
-| Herman Miller                                  | 1490      | 
-| Trinseo LLC                                    | 1484      | 
-| Trelleborg AB                                  | 1409      | 
-| Electrolux                                     | 1227      | 
-| Holmen                                         | 1083      | 
-| Fujitsu Ltd.                                   | 970       | 
-| WOLF                                           | 948       | 
-| Mpact Limited                                  | 871       | 
-| BillerudKorsnäs                                | 814       | 
-| Delta Electronics                              | 765       | 
-| Raizen                                         | 750       | 
-| "Toppan Printing Co., Ltd."                    | 741       | 
-| Levi Strauss & Co.                             | 728       | 
-| PT Fajar Surya Wisesa Tbk                      | 721       | 
-| MITIE Group                                    | 680       | 
-| Acbel Polytech Inc                             | 488       | 
-| BlackBerry Limited                             | 382       | 
-| BT Group                                       | 366       | 
-| OMRON Corporation                              | 366       | 
-| "Osaka Gas Co., Ltd."                          | 366       | 
-| AVK                                            | 352       | 
-| Perfection Bakeries Inc.                       | 343       | 
-| Agraz                                          | 341       | 
-| Technicolor SA                                 | 333       | 
-| Crimidesa                                      | 320       | 
-| "Stanley Black & Decker, Inc."                 | 290       | 
-| Compal Electronics                             | 289       | 
-| SunPower Corporation                           | 281       | 
-| "Interface, Inc."                              | 259       | 
-| Johnson Matthey                                | 251       | 
-| Brambles                                       | 239       | 
-| PURECIRCLE USA                                 | 235       | 
-| "Elitegroup computer systems co., Ltd."        | 215       | 
-| Pacific Coast Producers                        | 187       | 
-| KNOLL INC                                      | 146       | 
-| Innolux Corporation                            | 145       | 
-| Canon Inc.                                     | 128       | 
-| Coway Co Ltd                                   | 126       | 
-| Clariant AG                                    | 120       | 
-| Bridgestone Corporation                        | 118       | 
-| Schneider Electric                             | 118       | 
-| Maxxis International                           | 106       | 
-| Intel Corporation                              | 100       | 
-| Nokia Group                                    | 96        | 
-| Molson Coors Brewing Company                   | 90        | 
-| HUMAX ELECTRONICS CO LTD                       | 79        | 
-| SHENYANG DONGRUI                               | 76        | 
-| Humanscale Corporation                         | 74        | 
-| Azbil Corporation                              | 67        | 
-| Philips & Lite-On Digital Solutions Corp.      | 52        | 
-| DRAGON WILL ENTERPRISE                         | 50        | 
-| Ingenico                                       | 50        | 
-| Motorola Mobility                              | 30        | 
-| "Staples, Inc."                                | 30        | 
-| Quanta Storage Inc.                            | 28        | 
-| "Autodesk, Inc."                               | 22        | 
-| CONTRAF-NICOTEX-TOBACCO GmbH                   | 17        | 
-| "Shaw Industries Group, Inc."                  | 15        | 
-| Barilla Holding SpA                            | 15        | 
-| LG Electronics                                 | 14        | 
-| Syngenta AG                                    | 13        | 
-| "Mitsui Mining & Smelting Co., Ltd."           | 12        | 
-| Chunghwa Picture Tubes Ltd                     | 12        | 
-| Darfon Electronics Corp                        | 11        | 
-| Wistron Corp                                   | 9         | 
-| Kellogg Company                                | 8         | 
-| Danone                                         | 8         | 
-| Solvay S.A.                                    | 8         | 
-| Logitech International SA                      | 8         | 
-| Miquel Y Costas                                | 6         | 
-| "PepsiCo, Inc."                                | 6         | 
-| MediaTek                                       | 4         | 
-| ZHEJIANG WANFENG AUTO WHEEL CO LTD             | 3         | 
-| SK Hynix                                       | 3         | 
-| Tata Steel Europe                              | 3         | 
-| Radius Systems                                 | 3         | 
-| Cargill                                        | 2         | 
-| Air Liquide                                    | 2         | 
-| BORMIOLI LUIGI                                 | 2         | 
-| Georg Fischer                                  | 2         | 
-| Bumble Bee Foods LLC                           | 1         | 
-| MI (Michaelleides)                             | 1         | 
-| "Coca-Cola Enterprises, Inc."                  | 1         | 
-| CartOne S.r.l.                                 | 1         | 
-| "YONYU Plastics (Shanghai) Co.,Ltd"            | 0         | 
-| Martin Bauer GmbH                              | 0         | 
-| Owens-Illinois                                 | 0         | 
-| SGD Group                                      | 0         | 
-| Coca-Cola HBC AG                               | 0         | 
-| Times Microwave Systems                        | 0         | 
-| CNX Resources                                  | 0         | 
-| Nestlé                                         | 0         | 
-| TETRA PAK                                      | 0         | 
-| Fabrica de Tapas Bavaria                       | 0         | 
-| Retal                                          | 0         | 
+| company_name                            | total_pcf | 
+| --------------------------------------: | --------: | 
+| "Gamesa Corporación Tecnológica, S.A."  | 9778464   | 
+| Daimler AG                              | 1594300   | 
+| Volkswagen AG                           | 655960    | 
+| "Mitsubishi Gas Chemical Company, Inc." | 212016    | 
+| "Hino Motors, Ltd."                     | 191687    | 
+| Arcelor Mittal                          | 167007    | 
+| Weg S/A                                 | 160655    | 
+| General Motors Company                  | 137007    | 
+| "Lexmark International, Inc."           | 132012    | 
+| "Daikin Industries, Ltd."               | 105600    | 
+| CJ Cheiljedang                          | 94817     | 
+| LG Chem Ltd                             | 91926     | 
+| Waters Corporation                      | 72486     | 
+| Xerox Corporation                       | 72051     | 
+| Akzo Nobel                              | 70417     | 
+| Quanta Computer                         | 58217     | 
+| "Ricoh Co., Ltd."                       | 35505     | 
+| NEC Corporation                         | 23858     | 
+| Bloomberg                               | 22684     | 
+| Metsä Board                             | 21533     | 
+
 
 Topping the list "Gamesa Corporación Tecnológica, S.A." One job is in the field of wind power, followed by Volkswagen AG, a famous car manufacturer in Germany, and the rest are companies in other fields such as Services, Personal Product, etc.
 
